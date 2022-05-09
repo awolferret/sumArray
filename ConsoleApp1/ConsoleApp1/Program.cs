@@ -29,22 +29,14 @@ namespace ConsoleApp1
                         array[i] = newArray[i];
                     }
                     array[arrayLenght - 1] = number;
-                    newArray = new int[arrayLenght];
-
-                    for (int i = 0; i < array.Length; i++)
-                    {
-                        newArray[i] = array[i];
-                    }
-                    newArray[arrayLenght - 1] = number;
+                    newArray = array;
                 }
-
                 else if (userInput == "sum")
                 {
 
                     for (int i = 0; i < array.Length; i++)
                     {
                         sum += array[i];
-                        
                     }
                     Console.WriteLine($"Сумма цифр {sum}");
                     sum = 0;
